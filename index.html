@@ -6,19 +6,19 @@
   </head>
   <body>
 <header class="main-header">
-<nav class="navigation">
   <div class="navigation-logo">
-  <a href="index.html"><img src="#" alt="Логотип городка Седона"></a>
-  </div>
+    <a href="index.html"><img src="#" alt="Логотип городка Седона"></a>
+    </div>
+<nav class="navigation">
 <ul class="navigation-list">
   <li class="navigation-item">
-    <a class="navigation-link">Главная</a>
+    <a class="navigation-link navigation-link-current">Главная</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
               </li>
 </ul>
 <ul class="navigation-list">
@@ -26,27 +26,32 @@
     <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
       </li>
       <li class="navigation-user">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span>
+        <span>12</span></a>
           </li>
           <li class="navigation-user">
-            <a class=" button navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link-button" href="#">Хочу сюда</a>
               </li>
 </ul>
 </nav>
 </header>
 <main class="main-index">
-  <section class="welcome">
+  <div class="welcome-img">
   <img src="#" alt='Добро пожаловать в прекрасную Седону, потому что Гранд Каньон отстой'>
+  </div>
+  <div class="welcome-text">
   <h1>Седона — небольшой городок в Аризоне,<br>
     заслуживающий большего!</h1>
     <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-  </section>
+  </div>
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
     <ul class="advantages-list">
       <li class="advantages-item">
         <h3>Настоящий городок</h3>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      </li>
+      <li class="advantages-img">
         <img src="#" alt="Здание в городке Седона с видом на каньон">
       </li>
       <li class="advantages-item">
@@ -64,13 +69,17 @@
             <li class="advantages-item">
               <h3>Там есть мост дьявола</h3>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </li>
+            <li class="advantages-img">
               <img src="#" alt="Вид на каньон">
+              </li>
     </ul>
   </section>
   <section class="services">
-    <h2>
+    <h2 class="visually-hidden">Сервис</h2>
+    <p>
       Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
-    </h2>
+    </p>
      <p>Опытный персонал и качественное обслуживание!</p>
      <ul class="services-list">
       <li class="services-item">
@@ -93,10 +102,9 @@
   <section class="search">
     <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <button class="search-hotel-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    <a class="search-link-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
   </section>
 </main>
-<footer class="main-footer">
 <section class="subscription">
   <h2>Подпишитесь на рассылку</h2>
   <p>
@@ -104,26 +112,32 @@
   </p>
   <form class="email-form" action="https://echo.htmlacademy.ru/." method="post">
     <input type="text" name="email" placeholder="Ваш e-mail">
+    <label for="email-form">E-mail</label>
   </form>
   <button class="button" type="submit">Подписаться</button>
 </section>
-<section class="contacts">
-  <ul class="contacts-list">
-    <li class="contacts-item">
-      <a class="visually-hidden" href="#">ВКонтакте</a>
+<footer class="main-footer">
+<div class="social">
+  <ul class="social-list">
+    <li class="social-item">
+      <a class="social-link" href="#"><span class="visually-hidden">ВКонтакте</span></a>
     </li>
-    <li class="contacts-item">
-      <a class="visually-hidden" href="#">Телеграмм</a>
+    <li class="social-item">
+      <a class="social-link" href="#"><span class="visually-hidden">Телеграмм</span></a>
     </li>
-    <li class="contacts-item">
-      <a class="visually-hidden" href="#">Инстаграмм</a>
+    <li class="social-item">
+      <a class="social-link" href="#"><span class="visually-hidden">Инстаграмм</span></a>
     </li>
   </ul>
-</section>
-<a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-<a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/.">
+</div>
+<div class="footer-phone">
+<a href="tel:+78128121212">+7 (812) 812-12-12</a>
+</div>
+<div class="footer-logo-htmlacademy">
+<a href="https://htmlacademy.ru/.">
   <img src="#" alt="Логотип htmlacademy">
 </a>
+</div>
 </footer>
   </body>
 </html>
