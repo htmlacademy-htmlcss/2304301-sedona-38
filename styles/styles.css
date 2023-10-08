@@ -157,7 +157,16 @@ text-align: center;
   text-align: center;
 }
 
+.email-form {
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
 .subscription-button {
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82B3D3;
 }
 
@@ -168,4 +177,108 @@ text-align: center;
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+/* catalog */
+/* чтобы вставить фоновое изображение надо объединить header и section c фильтрами? и там же задать белый цвет текста  */
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-item {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #000000;
+}
+/* background чтобы пока было видно */
+
+.catalog-filters-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog-filters-item {
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.price-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.submit-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+ .button-reset {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+ }
+ /* сделать ее прозрачной */
+
+ .catalog-hotels-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+ }
+
+ .hotel-card-link {
+  color:#000000 ;
+  text-decoration: none;
+ }
+
+ .hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+ }
+
+ .hotel-card-type {
+  font-weight: 400;
+  color: #333333;
+ }
+
+ .hotel-card-price {
+  font-weight: 400;
+  color: #333333;
+ }
+
+ .button-blue {
+  background-color: #82B3D3;
+ }
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.hotel-card-rating {
+  font-weight: 400;
+  color: #333333;
+}
+
+.pagination-item {
+  background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pagination-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
 }
