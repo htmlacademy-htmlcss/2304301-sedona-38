@@ -15,6 +15,157 @@
 }
 body {
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* надо ли отдельно прописывать стили для  main-header если он их наследует */
+.navigation-link {
+font-size: 20px;
+font-weight: 700;
+text-align: center;
+color: #000000;
+text-decoration: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link-favorite {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url(../images/background/background.jpg);
+  background-size: 100%, auto;
+  background-repeat: no-repeat;
+}
+ .welcome-title {
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+ }
+  .welcome-reasons {
+    font-weight: 400;
+    text-align: center;
+  }
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.advantages-text {
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages-blue {
+  background-color: #82B3D3;
+}
+/* у остальных меняеться прозрачность */
+
+.services-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-text {
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.services-name {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-description {
+font-weight: 400;
+text-align: center;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-text {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.search-link {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscription {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url(../images/background/subscribe-background.jpg);
+  background-size: 100%, auto;
+  background-repeat: no-repeat;
+}
+
+.subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscription-text {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subscription-button {
+  background-color: #82B3D3;
+}
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
 }
