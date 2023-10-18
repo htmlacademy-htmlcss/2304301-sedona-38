@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src:url("..fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,24 +10,68 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src:url("..fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  min-width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
   color: #000000;
   background-color: #ffffff;
 }
 
-/* надо ли отдельно прописывать стили для  main-header если он их наследует */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
 .navigation-link {
-font-size: 20px;
-font-weight: 700;
-text-align: center;
-color: #000000;
-text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
 }
 
 .button {
@@ -47,6 +91,12 @@ text-decoration: none;
   line-height: 10px;
 }
 
+.main-container {
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-index {
   color: #000000;
   background-color: #ffffff;
@@ -54,18 +104,24 @@ text-decoration: none;
   background-size: 100%, auto;
   background-repeat: no-repeat;
 }
- .welcome-title {
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
- }
-  .welcome-reasons {
-    font-weight: 400;
-    text-align: center;
-  }
+}
+
+.welcome-reasons {
+  font-weight: 400;
+  text-align: center;
+}
 
 .advantages-title {
   font-size: 24px;
@@ -73,7 +129,6 @@ text-decoration: none;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .advantages-text {
@@ -84,6 +139,7 @@ text-decoration: none;
 .advantages-blue {
   background-color: #82B3D3;
 }
+
 /* у остальных меняеться прозрачность */
 
 .services-title {
@@ -110,8 +166,8 @@ text-decoration: none;
 }
 
 .services-description {
-font-weight: 400;
-text-align: center;
+  font-weight: 400;
+  text-align: center;
 }
 
 .search-title {
@@ -178,8 +234,6 @@ text-align: center;
   color: #000000;
   text-decoration: none;
 }
-/* catalog */
-/* чтобы вставить фоновое изображение надо объединить header и section c фильтрами? и там же задать белый цвет текста  */
 
 .catalog-title {
   font-size: 60px;
@@ -192,7 +246,12 @@ text-align: center;
   text-decoration: none;
   background-color: #000000;
 }
-/* background чтобы пока было видно */
+
+.background-filters {
+  background-image: url(../images/background/filter-background.jpg);
+  background-size: 100%, auto;
+  background-repeat: no-repeat;
+}
 
 .catalog-filters-title {
   font-size: 20px;
@@ -218,44 +277,46 @@ text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
 }
- .button-reset {
+
+.button-reset {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
- }
- /* сделать ее прозрачной */
+}
 
- .catalog-hotels-title {
+/* сделать ее прозрачной */
+
+.catalog-hotels-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
- }
+}
 
- .hotel-card-link {
-  color:#000000 ;
+.hotel-card-link {
+  color: #000000;
   text-decoration: none;
- }
+}
 
- .hotel-card-title {
+.hotel-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
- }
+}
 
- .hotel-card-type {
+.hotel-card-type {
   font-weight: 400;
   color: #333333;
- }
+}
 
- .hotel-card-price {
+.hotel-card-price {
   font-weight: 400;
   color: #333333;
- }
+}
 
- .button-blue {
+.button-blue {
   background-color: #82B3D3;
- }
+}
 
 .button-green {
   background-color: #7DB54F;
@@ -264,6 +325,7 @@ text-align: center;
 .hotel-card-rating {
   font-weight: 400;
   color: #333333;
+  background-color: #F2F2F2;
 }
 
 .pagination-item {
