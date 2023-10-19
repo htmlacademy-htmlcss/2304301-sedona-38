@@ -232,6 +232,12 @@ body {
   padding: 96px 258px 104px;
 }
 
+.subscription-inner {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 96px 258px 104px;
+}
+
 .subscription-title {
   font-size: 30px;
   line-height: 36px;
@@ -298,13 +304,24 @@ body {
 .breadcrumbs-item {
   color: #ffffff;
   text-decoration: none;
-  background-color: #000000;
+
 }
 
 .background-filters {
   background-image: url(../images/background/filter-background.jpg);
   background-size: 100%, auto;
   background-repeat: no-repeat;
+  padding: 35px 70px 70px;
+}
+
+.catalog-filters-group {
+  width: 150px;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.catalog-filters {
+  display: flex;
 }
 
 .catalog-filters-title {
@@ -316,6 +333,10 @@ body {
 .catalog-filters-item {
   line-height: 23px;
   font-weight: 400;
+}
+
+.price-filters {
+  width: 550px;
 }
 
 .price-title {
@@ -339,7 +360,15 @@ body {
   color: #ffffff;
 }
 
-/* сделать ее прозрачной */
+.hotel-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-hotels {
+  padding: 50px 70px 60px;
+}
 
 .catalog-hotels-title {
   font-size: 30px;
