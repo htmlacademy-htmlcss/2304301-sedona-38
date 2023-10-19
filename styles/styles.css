@@ -37,6 +37,7 @@ body {
   margin: 0 auto;
 }
 
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -51,19 +52,23 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  padding: 0 70px;
 }
+
+.navigation-logo {
+  margin-right: 30px;
+}
+
 
 .navigation-list {
   width: 450px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .navigation-user {
   max-width: 310px;
-  margin-left: auto;
-  margin-right: 70px;
+  margin-right: auto;
 }
 
 .navigation-link {
@@ -105,9 +110,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
+.welcome-img {
+  margin: 67px 371px;
 }
 
 .welcome-title {
@@ -129,6 +133,19 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-text {
@@ -157,6 +174,17 @@ body {
   text-align: center;
 }
 
+.services-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.services-item {
+  width: 400px;
+}
+
 .services-name {
   font-size: 24px;
   line-height: 28px;
@@ -168,6 +196,10 @@ body {
 .services-description {
   font-weight: 400;
   text-align: center;
+}
+
+.search {
+  padding: 96px 304px;
 }
 
 .search-title {
@@ -188,6 +220,7 @@ body {
 .search-link {
   font-size: 20px;
   line-height: 36px;
+  padding: 8px 50px;
 }
 
 .subscription {
@@ -196,6 +229,7 @@ body {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: 100%, auto;
   background-repeat: no-repeat;
+  padding: 96px 258px 104px;
 }
 
 .subscription-title {
@@ -226,6 +260,22 @@ body {
   background-color: #82B3D3;
 }
 
+.main-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+}
+
+.social {
+  width: 150px;
+  margin-right: auto;
+}
+
+.footer-phone-container {
+  width: 720px;
+}
+
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -233,6 +283,10 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-logo-htmlacademy {
+  margin-right: auto;
 }
 
 .catalog-title {
