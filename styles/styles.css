@@ -398,12 +398,22 @@ body {
 }
 
 .social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.social-link {
+  display: block;
+  width: 18px;
+  height: 16px;
+  padding: 12px 15px;
 }
 
 
 .footer-phone-container {
-  width: 720px;
+  width: 332px;
 }
 
 .footer-phone {
@@ -416,7 +426,7 @@ body {
 }
 
 .footer-logo-htmlacademy {
-  margin-right: auto;
+  margin-left: auto;
 }
 
 /* catalog */
