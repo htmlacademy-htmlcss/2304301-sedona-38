@@ -7,9 +7,9 @@
     <title>Каталог Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <div class="page-container">
 
-    <body>
+  <body>
+    <div class="page-container">
       <header data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
@@ -186,7 +186,7 @@
               <p class="hotel-card-price">От 5000 ₽</p>
               <a class="button" href="#">Подробнее</a>
               <button type="button" class="button button-green">В избранном</button>
-              <div class="stars stars-4"><span class="visually-hidden">Четырехзвездочная</div>
+              <div class="stars stars-4"><span class="visually-hidden">Четырехзвездочная</span></div>
               <p class="hotel-card-rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card-item">
@@ -247,7 +247,7 @@
         </p>
 
         <form class="email-form" action="https://echo.htmlacademy.ru/." method="post">
-          <input class="email-field" type="text" name="email" placeholder="Ваш e-mail" required>
+          <input class="email-field" type="text" id="email-form" name="email" placeholder="Ваш e-mail" required>
           <label class="visually-hidden" for="email-form">E-mail</label>
           <button class="button-brand subscription-button" type="submit">Подписаться</button>
         </form>
@@ -300,7 +300,8 @@
           </div>
         </div>
       </footer>
-    </body>
-  </div>
+    </div>
+  </body>
+
 
 </html>
