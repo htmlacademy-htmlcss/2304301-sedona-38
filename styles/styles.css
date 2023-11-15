@@ -278,8 +278,8 @@ body {
   justify-content: space-evenly;
   box-sizing: border-box;
   width: 400px;
-  height: 385px;
-  padding: 103px 85px;
+  min-height: 385px;
+  padding: 102px 85px;
 }
 
 
@@ -357,6 +357,8 @@ body {
 }
 
 .services-description {
+  margin: 0;
+  margin-top: 30px;
   color: #333333;
   font-weight: 400;
   text-align: center;
@@ -364,7 +366,7 @@ body {
 
 /* search */
 .search {
-  padding: 94px 304px;
+  padding: 97px 304px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -765,7 +767,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  padding: 15px 18px 18px 22px;
+  padding: 16px 18px 25px 24px;
   border-radius: 10px;
   box-sizing: border-box;
   width: 256px;
@@ -800,7 +802,6 @@ body {
 /* breadcrumbs */
 .breadcrumbs {
   display: flex;
-  width: 73px;
   margin: 0;
   margin-top: 5px;
   padding: 0;
@@ -808,10 +809,22 @@ body {
 }
 
 .breadcrumbs-item {
+  display: flex;
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
   margin-right: 10px;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 20px;
+  background-image: url(../images/icons/pointer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto 10px auto 0;
 }
 
 .breadcrumbs-link-home {
@@ -834,14 +847,6 @@ body {
   opacity: 0.3;
 }
 
-.breadcrumbs-item-pointer {
-  background-image: url(../images/icons/pointer.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 7px;
-  height: 10px;
-  padding: 5px;
-}
 
 .background-filters {
   background-color: #3F5E72;
@@ -968,8 +973,9 @@ body {
 .button-price-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
   gap: 32px;
+  padding-top: 56px;
 }
 
 .price-input {
@@ -1108,7 +1114,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 200px;
+  margin-right: auto;
 }
 
 .select-control {
@@ -1142,6 +1148,7 @@ body {
 
 .sorting-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   margin-bottom: 39px;
@@ -1151,7 +1158,7 @@ body {
 .card-list {
   margin: 0;
   padding: 0;
-  margin-left: auto;
+  margin-left: 70px;
   list-style-type: none;
   display: flex;
   gap: 10px;
