@@ -6,9 +6,9 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <div class="page-container">
 
-    <body>
+  <body>
+    <div class="page-container">
       <header data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
@@ -128,7 +128,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="email-form" action="https://echo.htmlacademy.ru/." method="post">
-          <input class="email-field" type="email" name="email-subscription" placeholder="Ваш e-mail" required>
+          <input class="email-field" type="email" id="email-form" name="email" placeholder="Ваш e-mail" required>
           <label class="visually-hidden" for="email-form">E-mail</label>
           <button class="button-brand subscription-button" type="submit">Подписаться</button>
         </form>
@@ -191,13 +191,13 @@
             <form class="modal-search-form" action="https://echo.htmlacademy.ru/." method="get">
               <div class="modal-date-wrapper">
                 <label class="modal-date-input" for="checkin">Дата Заезда:</label>
-                <input class="date" type="data" id="checkin" name="checkin-date" value="27 апреля 2020"
+                <input class="date" type="text" id="checkin" name="checkin-date" value="27 апреля 2020"
                   placeholder="Укажите дату">
                 <span class="modal-text modal-text-error">Мы не можем отправить вас в прошлое</span>
               </div>
               <div class="modal-date-wrapper">
                 <label class="modal-date-input" for="checkout">Дата Выезда:</label>
-                <input class="date" type="data" id="checkout" name="checkout-date" value="1 сентября 2023"
+                <input class="date" type="text" id="checkout" name="checkout-date" value="1 сентября 2023"
                   placeholder="Укажите дату">
                 <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
@@ -237,7 +237,8 @@
           </section>
         </div>
       </div>
-    </body>
-  </div>
+    </div>
+  </body>
+
 
 </html>
