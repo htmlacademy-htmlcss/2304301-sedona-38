@@ -1315,12 +1315,10 @@ body {
 .button-green:hover,
 .button-green:focus {
   background-color: #6C9E42;
-
 }
 
 .button-green:active {
   color: #FFFFFF4D;
-
 }
 
 .hotel-card-rating {
