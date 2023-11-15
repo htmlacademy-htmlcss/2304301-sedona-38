@@ -10,7 +10,7 @@
   <div class="page-container">
 
     <body>
-      <header>
+      <header data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седона"></a>
@@ -41,7 +41,7 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main data-test="main" class="main-container">
         <div class="background-filters">
           <header class="header-inner">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
@@ -55,7 +55,7 @@
               </li>
             </ul>
           </header>
-          <section class="filters">
+          <section data-test="filter" class="filters">
             <h2 class="visually-hidden">Варианты фильтров</h2>
             <form class="catalog-filters" action="https://echo.htmlacademy.ru/." method="get">
               <div class="fieldset-wrapper">
@@ -134,7 +134,7 @@
             </form>
           </section>
         </div>
-        <section class="catalog-hotels">
+        <section data-test="catalog" class="catalog-hotels">
           <div class="sorting-container">
             <p class="catalog-hotels-title">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
@@ -240,7 +240,7 @@
           </ul>
         </section>
       </main>
-      <section class="subscription-inner">
+      <section data-test="subscribe" class="subscription-inner">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -252,7 +252,7 @@
           <button class="button-brand subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
-      <footer>
+      <footer data-test="footer">
         <div class="main-footer-container">
           <div class="social">
             <ul class="social-list">

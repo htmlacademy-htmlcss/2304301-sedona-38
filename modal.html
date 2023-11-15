@@ -1,0 +1,56 @@
+<div data-test="modal" class="modal-container">
+  <div class="modal modal-search">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="modal-search-form" action="https://echo.htmlacademy.ru/." method="get">
+        <div class="modal-date-wrapper">
+          <label class="modal-date-input" for="checkin">Дата Заезда:</label>
+          <input class="date" type="data" id="checkin" name="checkin-date" value="27 апреля 2020"
+            placeholder="Укажите дату">
+          <span class="modal-text modal-text-error">Мы не можем отправить вас в прошлое</span>
+        </div>
+        <div class="modal-date-wrapper">
+          <label class="modal-date-input" for="checkout">Дата Выезда:</label>
+          <input class="date" type="data" id="checkout" name="checkout-date" value="1 сентября 2023"
+            placeholder="Укажите дату">
+          <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
+        </div>
+        <div class="amount">
+          <label class="amount-text" for="adult">Взрослые:</label>
+          <div class="amount-button">
+            <button class="button-min amount-button-field" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <input class="count amount-button-field" type="text" id="adult" name="adult-amount" value="2">
+            <button class="button-max amount-button-field" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </div>
+          <span class="amount-text amount-text-wrapper">
+            <label class="amount-text-children" for="children">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle">
+              </button>
+              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                18
+                лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </span>
+          <div class="amount-button">
+            <button class="button-min amount-button-field" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <input class="count amount-button-field" type="text" id="children" name="children-amount" value="2">
+            <button class="button-max amount-button-field" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </div>
+        </div>
+        <button class="button-brand modal-button" type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+</div>
