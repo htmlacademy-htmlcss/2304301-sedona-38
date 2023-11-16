@@ -43,10 +43,8 @@
       </header>
       <main data-test="main" class="main-container">
         <section data-test="hero" class="hero">
-          <div class="welcome-img">
-            <img src="images/welcome.svg" width="458" height="352"
-              alt='Welcome to the gorgeous Sedona because the grand canyon sucks.'>
-          </div>
+          <img class="welcome-img" src="images/welcome.svg" width="458" height="352"
+            alt='Welcome to the gorgeous Sedona because the grand canyon sucks.'>
         </section>
         <section data-test="advantages" class="advantages">
           <h1 class="welcome-title">Седона — небольшой городок в Аризоне,
@@ -100,17 +98,17 @@
           <ul class="services-list">
             <li class="services-item services-home">
               <h3 class="services-name">Жильё</h3>
-              <p class="services-description">Рекомендуем пожить в настоящем мотеле,
+              <p class="services-description">Рекомендуем пожить в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="services-item services-food">
               <h3 class="services-name">Еда</h3>
-              <p class="services-description">Всегда заказывайте
+              <p class="services-description">Всегда заказывайте<br>
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services-item services-gift">
               <h3 class="services-name">Сувениры</h3>
-              <p class="services-description">Не только китайского,
+              <p class="services-description">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -140,8 +138,8 @@
             <ul class="social-list">
               <li>
                 <a class="social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте.</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="25" height="15"
-                    fill="none" viewBox="0 0 25 15">
+                  <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Вконтакте."
+                    xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none" viewBox="0 0 25 15">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z"
                       clip-rule="evenodd" />
@@ -150,8 +148,8 @@
               </li>
               <li>
                 <a class="social-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграмм.</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="16"
-                    fill="none" viewBox="0 0 18 16">
+                  <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Телеграмм."
+                    xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none" viewBox="0 0 18 16">
                     <path fill="currentColor"
                       d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" />
                   </svg>
@@ -160,8 +158,8 @@
               <li>
                 <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><span
                     class="visually-hidden">Ютуб.</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="18"
-                    fill="none" viewBox="0 0 23 18">
+                  <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Ютуб."
+                    xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none" viewBox="0 0 23 18">
                     <path fill="currentColor"
                       d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z" />
                   </svg>
@@ -194,13 +192,13 @@
               <div class="modal-date-wrapper">
                 <label class="modal-date-input" for="checkin">Дата Заезда:</label>
                 <input class="date" type="text" id="checkin" name="checkin-date" value="27 апреля 2020"
-                  placeholder="Укажите дату">
+                  placeholder="Укажите дату" required>
                 <span class="modal-text modal-text-error">Мы не можем отправить вас в прошлое</span>
               </div>
               <div class="modal-date-wrapper">
                 <label class="modal-date-input" for="checkout">Дата Выезда:</label>
                 <input class="date" type="text" id="checkout" name="checkout-date" value="1 сентября 2023"
-                  placeholder="Укажите дату">
+                  placeholder="Укажите дату" required>
                 <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="amount">
@@ -209,7 +207,8 @@
                   <button class="button-min amount-button-field" type="button">
                     <span class="visually-hidden">Меньше.</span>
                   </button>
-                  <input class="count amount-button-field" type="text" id="adult" name="adult-amount" value="2">
+                  <input class="count amount-button-field" type="text" id="adult" name="adult-amount" value="2"
+                    required>
                   <button class="button-max amount-button-field" type="button">
                     <span class="visually-hidden">Больше.</span>
                   </button>
@@ -228,7 +227,8 @@
                   <button class="button-min amount-button-field" type="button">
                     <span class="visually-hidden">Меньше.</span>
                   </button>
-                  <input class="count amount-button-field" type="text" id="children" name="children-amount" value="2">
+                  <input class="count amount-button-field" type="text" id="children" name="children-amount" value="2"
+                    required>
                   <button class="button-max amount-button-field" type="button">
                     <span class="visually-hidden">Больше.</span>
                   </button>
