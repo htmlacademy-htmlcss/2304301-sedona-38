@@ -187,11 +187,13 @@ body {
 }
 
 .hero {
-  background-image: url(../images/background/background.jpg);
+  background-image: url(../images/background/flag.png), url(../images/background/index-background.jpg);
   background-color: #82B3D3;
   background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: bottom center;
   padding-top: 50px;
-  padding-bottom: 78px;
+  padding-bottom: 81px;
 }
 
 .welcome-img {
@@ -203,7 +205,7 @@ body {
 /* advantages */
 .welcome-title {
   margin: 0;
-  padding: 72px 230px 0;
+  padding: 71px 230px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -259,7 +261,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .advantages-item-wide {
@@ -281,7 +283,7 @@ body {
   box-sizing: border-box;
   width: 400px;
   min-height: 385px;
-  padding: 102px 85px;
+  padding: 104px 85px;
 }
 
 .advantages-container-light {
@@ -321,7 +323,7 @@ body {
 }
 
 .services-item {
-  padding: 186px 85px 80px;
+  padding: 184px 85px 80px;
   width: 400px;
   box-sizing: border-box;
 }
@@ -358,14 +360,14 @@ body {
 
 .services-description {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
   color: #333333;
   text-align: center;
 }
 
 /* search */
 .search {
-  padding: 97px 304px;
+  padding: 98px 304px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,7 +407,7 @@ body {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 96px 258px 104px;
+  padding: 95px 258px 104px;
 }
 
 .subscription-inner {
@@ -450,6 +452,10 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   cursor: pointer;
+}
+
+.email-field:disabled {
+  opacity: 0.3;
 }
 
 .subscription-button {
